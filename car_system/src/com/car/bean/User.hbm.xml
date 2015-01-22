@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping package="com.car.bean">
+    	<class name="User" table="user">
+    		<!-- userid映射 -->
+    		<id name="userid" type="java.lang.Integer">
+    			<!-- 主键生成策略  采用序列 -->
+    			<column name="userid"/>
+    			<generator class="identity">
+    			</generator>
+    		</id>
+    		<!-- username映射 -->
+    		<property name="username"/>
+    		<property name="password"/>
+    		<property name="blogid"/>
+    		<property name="replayid"/>
+    		<property name="knowid"/>
+    		<property name="realname"/>
+    		<property name="phone"/>
+    		<property name="favorite"/>
+    	</class>
+    
+    </hibernate-mapping>

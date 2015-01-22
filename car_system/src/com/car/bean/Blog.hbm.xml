@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping package="com.car.bean">
+    	<class name="Blog" table="blog">
+    		<!-- userid映射 -->
+    		<id name="blogid">
+    			<!-- 主键生成策略  采用序列 -->
+    			<generator class="identity">
+    			</generator>
+    		</id>
+    		<!-- username映射 -->
+    		<property name="username"/>
+    		<property name="userid"/>
+    		<property name="blogtitle"/>
+    		<property name="blogdate"/>
+    		<property name="blogtext"/>
+         
+    	</class>
+    
+    </hibernate-mapping>

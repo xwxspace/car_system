@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping package="com.car.bean">
+    	<class name="Know" table="konw">
+    		<!-- userid映射 -->
+    		<id name="knowid">
+    			<!-- 主键生成策略  采用序列 -->
+    			<generator class="identity">
+    			</generator>
+    		</id>
+    		<!-- username映射 -->
+    		<property name="replayid"/>
+    		<property name="username"/>
+    		<property name="knowdate"/>
+    		<property name="knowtitle"/>
+    		<property name="knowtext"/>
+            <property name="userid"/>
+    	</class>
+    
+    </hibernate-mapping>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping package="com.car.bean">
+    	<class name="Replay" table="replay">
+    		<!-- userid映射 -->
+    		<id name="replayid">
+    			<!-- 主键生成策略  采用序列 -->
+    			<generator class="identity">
+    			</generator>
+    		</id>
+    		<!-- username映射 -->
+    		<property name="replaytext"/>
+    		<property name="userid"/>
+    		<property name="replaydate"/>
+    		<property name="username"/>
+    		<property name="knowid"/>
+         
+    	</class>
+    
+    </hibernate-mapping>
